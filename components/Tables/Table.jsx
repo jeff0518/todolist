@@ -9,38 +9,30 @@ function Table() {
           <th className={style.thead_th}>
             <span className={style.thead_span}>Name</span>
           </th>
-        </tr>
-        <tr className={style.thead_tr}>
           <th className={style.thead_th}>
             <span className={style.thead_span}>Email</span>
           </th>
-        </tr>
-        <tr className={style.thead_tr}>
           <th className={style.thead_th}>
             <span className={style.thead_span}>Salary</span>
           </th>
-        </tr>
-        <tr className={style.thead_tr}>
           <th className={style.thead_th}>
             <span className={style.thead_span}>Birthday</span>
           </th>
-        </tr>
-        <tr className={style.thead_tr}>
           <th className={style.thead_th}>
             <span className={style.thead_span}>Status</span>
           </th>
-        </tr>
-        <tr className={style.thead_tr}>
           <th className={style.thead_th}>
             <span className={style.thead_span}>Actions</span>
           </th>
         </tr>
       </thead>
       <tbody className={style.tbody}>
-        <tr className={style.table_tr}>
-          <td className={style.td_img}>
-            <img src="#" alt="" />
-            <span>Daily Tuition</span>
+        <tr className={style.tbody_tr}>
+          <td className={style.tbody_td}>
+            <div className={style.td_img}>
+              <img src="#" alt="" />
+              <span className={style.td_span}>Daily Tuition</span>
+            </div>
           </td>
           <td className={style.tbody_td}>
             <span>dailytuition@gmail.com</span>
@@ -57,12 +49,14 @@ function Table() {
             </button>
           </td>
           <td className={style.tbody_td}>
-            <button className={style.td_but}>
-              <BiEdit size={25} color={"rgb(24,197,94)"} />
-            </button>
-            <button className={style.td_but}>
-              <BiTrashAlt size={25} color={"rgb(244,63,94)"} />
-            </button>
+            <div className={style.tbody_but}>
+              <button className={style.td_but}>
+                <BiEdit size={25} color={"rgb(24,197,94)"} />
+              </button>
+              <button className={style.td_but}>
+                <BiTrashAlt size={25} color={"rgb(244,63,94)"} />
+              </button>
+            </div>
           </td>
         </tr>
       </tbody>
