@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { BiUserPlus } from "react-icons/bi";
 import Table from '@/components/Tables/Table';
+import Form from '../components/Form/Form'
 import style from './index.module.css'
 
 function HomePage() {
@@ -25,6 +26,9 @@ function HomePage() {
           </div>
         </div>
 
+
+        <Form />
+        
         <div className={style.table}>
           <Table />
         </div>
