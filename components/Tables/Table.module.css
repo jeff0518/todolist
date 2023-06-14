@@ -1,0 +1,56 @@
+.table {
+  width: 100%;
+}
+
+.thead {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thead_tr {
+  background-color: black;
+  width: 100%;
+}
+
+.thead_th, .tbody_td {
+  padding: 0.5rem 4rem;
+}
+
+.thead_span {
+  color: #edf2f7;
+}
+
+.tbody {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  background-color: #EDF2F7;
+}
+
+.table_tr {
+  width: 100%;
+  background-color: #F9FAFB;
+  text-align: center;
+}
+
+.td_img {
+  padding: 0.5rem 4rem;
+}
+
+.td_span {
+  text-align: center;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+.td_but {
+  cursor: pointer;
+}
+
+.td_but_span {
+  background-color: #34d399;
+  color: white;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+}
