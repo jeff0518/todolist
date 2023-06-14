@@ -26,13 +26,13 @@ function HomePage() {
           </div>
         </div>
 
+        <div className={style.form}>
+          <Form />
+        </div>
 
-        <Form />
-        
         <div className={style.table}>
           <Table />
         </div>
-
       </main>
     </section>
   );

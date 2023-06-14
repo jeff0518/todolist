@@ -2,40 +2,49 @@ import style from "./Form.module.css";
 
 function Form() {
   return (
-    <form>
+    <form className={style.form}>
       <div className={style.container}>
         <input
           className={style.container_input}
           type="text"
-          name="firstName"
+          name="FirstName"
           placeholder="FirstName"
-        ></input>
+        />
       </div>
       <div className={style.container}>
         <input
           className={style.container_input}
           type="text"
-          name="firstName"
+          name="LastName"
           placeholder="LastName"
-        ></input>
+        />
       </div>
       <div className={style.container}>
         <input
           className={style.container_input}
           type="text"
-          name="firstName"
+          name="Email"
           placeholder="Email"
-        ></input>
+        />
       </div>
       <div className={style.container}>
         <input
           className={style.container_input}
           type="text"
-          name="firstName"
+          name="Salary"
           placeholder="Salary"
-        ></input>
+        />
       </div>
-      <div>
+      <div className={style.container}>
+        <input
+          className={style.container_input_date}
+          type="date"
+          name="Date"
+          placeholder="Date"
+        />
+      </div>
+
+      <div className={style.form_option}>
         <div className={style.form_check}>
           <input
             className={style.form_check_input}

@@ -49,3 +49,8 @@
 .table {
   margin: 0 auto;
 }
+
+.form {
+  margin: 0 auto;
+  padding: 1.25rem;
+}
