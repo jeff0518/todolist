@@ -1,5 +1,4 @@
 .table {
-  table-layout: fixed;
   width: 100%;
 }
 
@@ -10,7 +9,7 @@
 .thead_tr {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 2fr) repeat(2, 1fr);
+  grid-template-columns: repeat(4, 260px) repeat(2, 1fr);
   background-color: black;
 }
 
@@ -31,16 +30,17 @@
 .tbody_tr {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 2fr) repeat(2, 1fr);
+  grid-template-columns: repeat(4, 260px) repeat(2, 1fr);
   align-items: center;
+  text-align: center;
   background-color: #F9FAFB;
 }
 
 .td_img {
   width: 100%;
   display: flex;
-  flex-direction: row;
   align-items: center;
+  justify-content: center;
   padding: 0.5rem 4rem;
 }
 
