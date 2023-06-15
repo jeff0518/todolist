@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 import {BiPlus} from "react-icons/bi"
+import Success from "../Success/Success"
 import style from "./Form.module.css";
 
 const formReducer = (state, event) => {
@@ -14,8 +15,13 @@ function Form() {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formData)
+
+    if (Object.keys(formData).length === 0) return console.log("Don't have Form Data")
+    
+    console.log(formData);
   }
+if (Object.keys(formData).length > 0) return <Success message={"Data Added"} />;
+  
   return (
     <form className={style.form} onSubmit={handleSubmit}>
       <div className={style.container}>
