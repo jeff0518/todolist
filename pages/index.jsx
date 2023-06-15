@@ -1,10 +1,16 @@
-import Head from 'next/head';
+import Head from "next/head";
 import { BiUserPlus } from "react-icons/bi";
-import Table from '@/components/Tables/Table';
-import Form from '../components/Form/Form'
-import style from './index.module.css'
+import Table from "@/components/Tables/Table";
+import Form from "../components/Form/Form";
+import style from "./index.module.css";
+import { useState } from "react";
 
 function HomePage() {
+  const [visible, setVisible] = useState(false);
+
+  const handler = () => {
+    setVisible(visible ? false : true);
+  };
   return (
     <section>
       <Head>
@@ -17,7 +23,7 @@ function HomePage() {
         <h1 className={style.title}>Home Page</h1>
         <div className={style.container}>
           <div className={style.container_left}>
-            <button className={style.button}>
+            <button onClick={handler} className={style.button}>
               Add Employee
               <span className={style.icon}>
                 <BiUserPlus size={23} />
@@ -26,9 +32,7 @@ function HomePage() {
           </div>
         </div>
 
-        <div className={style.form}>
-          <Form />
-        </div>
+        {visible ? <Form /> : <></>}
 
         <div className={style.table}>
           <Table />
