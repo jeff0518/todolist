@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Jeff",
+    "avatar": "https://randomuser.me/api/portraits/men/1.jpg",
+    "email": "jeff@gmail.com",
+    "salary": "25000",
+    "date": "2023-06-08",
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "name": "Tom",
+    "avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+    "email": "tom@gmail.com",
+    "salary": "17800",
+    "date": "2023-06-12",
+    "status": "Inactive"
+  },
+  {
+    "id": 3,
+    "name": "Joe",
+    "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
+    "email": "joe@gmail.com",
+    "salary": "5000",
+    "date": "2023-06-18",
+    "status": "Inactive"
+  }
+]
